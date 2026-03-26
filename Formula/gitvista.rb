@@ -7,20 +7,20 @@ class Gitvista < Formula
   on_macos do
       if Hardware::CPU.arm?
         url "https://github.com/rybkr/gitvista/releases/download/v#{version}/gitvista_#{version}_darwin_arm64.tar.gz"
-        sha256 "6d23afae8fdeac84e96df95363cf0acc730e53ce"
+        sha256 "6ad55d098c559d2cf6160ffcbde10e086666239aceaa1dcd11fede5b53511fed"
       elsif Hardware::CPU.intel?
         url "https://github.com/rybkr/gitvista/releases/download/v#{version}/gitvista_#{version}_darwin_amd64.tar.gz"
-        sha256 "9b9c35d9038f250d49319668cdb58ae8105a7e4e"
+        sha256 ""
       end
     end
 
     on_linux do
       if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
         url "https://github.com/rybkr/gitvista/releases/download/v#{version}/gitvista_#{version}_linux_arm64.tar.gz"
-        sha256 "b851133b86de9b6403e609ba7375473272b54277"
+        sha256 ""
       elsif Hardware::CPU.intel?
         url "https://github.com/rybkr/gitvista/releases/download/v#{version}/gitvista_#{version}_linux_amd64.tar.gz"
-        sha256 "1c459634b0d2a7ffdf9afea657ff3f67a30d79ec"
+        sha256 ""
       end
     end
 
