@@ -1,7 +1,9 @@
 class Debounce < Formula
   desc "Menu bar key debounce filter for macOS"
   homepage "https://github.com/rybkr/debounce"
-  head "https://github.com/rybkr/debounce.git", branch: "main"
+  url "https://github.com/rybkr/debounce.git",
+      tag:      "v0.1.1",
+      revision: "9ce090caaba5a5b063f1df58b52b07b36ba33764"
 
   depends_on :macos
 
